@@ -3,14 +3,18 @@ import './App.css';
 import "./styles.css";
 import { Button } from 'bootstrap';
 import RideForm from './RideForm';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import tick from './tick.png'
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-const dummyData = [
-  { name: 'John Doe', startLocation: 'd-12/2', destination: 'Fast NUCES', startTime: '10:00 AM', fare: '$10', walletaddress: "123" },
-  { name: 'Jane Smith', startLocation: 'F-10/2', destination: 'Peshawar', startTime: '11:00 AM', fare: '$15', walletaddress: "124" },
-  // Add more dummy data as needed
+let dummyData = [
+    {
+      title: "data",
+      data: [
+        { name: 'John Doe', startLocation: 'd-12/2', destination: 'Fast NUCES', startTime: '10:00 AM', fare: '$10', walletaddress: "123" },
+      ]
+    }
 ];
 
 const userData = [
@@ -27,6 +31,18 @@ const Main = () => {
   const [RemoveEthPopup, setRemoveEthPopup] = useState(false);
   const [amount, setamount] = useState('');
   const [walletaddress, setwalletaddress] = useState('');
+
+  useEffect(() => {
+    const apiUrl = "http://localhost:5000/ride/get_rides";
+    axios.get(apiUrl)
+      .then((response) => {
+        console.log(response.data);
+        dummyData[0]["data"] = response.data["rides"];
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const handleAddRide = () => {
     setShowRideForm(true);
@@ -110,13 +126,13 @@ const Main = () => {
       </div>
       
       <div className="whole">
-      {dummyData.map((item, index) => (
+      {dummyData[0]["data"].map((item, index) => (
         <div className="details" key={index}>
           <p className="first">{item.name}</p>
-          <p>{item.startLocation}</p>
-          <p>{item.destination}</p>
-          <p>{item.startTime}</p>
-          <p>{item.fare}</p>
+          <p>{item["start_location"]}</p>
+          <p>{item["destination"]}</p>
+          <p>{item["start_time"]}</p>
+          <p>{item["price"]}</p>
           <button className="bookButton" onClick={bookNow}>Book Now</button>
         </div>
       ))}
