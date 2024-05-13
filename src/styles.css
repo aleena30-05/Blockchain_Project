@@ -1,0 +1,477 @@
+.macbook-pro {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+  
+  .macbook-pro .div {
+    background-color: #ffffff;
+    height: 850px;
+    width: 100%;
+  }
+  
+  .macbook-pro .overlap-group {
+    background-image: url(./car.jpg);
+    position: absolute;
+    background-size: cover;
+    height: 825px;
+    padding-top: 50px;
+    top: 0;
+    width: 100%;
+  }
+  
+  .macbook-pro .rectangle {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgb(0, 0, 0) 100%);
+    height: 875px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .macbook-pro .car-pool {
+    color: transparent;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 128px;
+    font-weight: 400;
+    left: 1200px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 400px;
+  }
+  
+  .macbook-pro .text-wrapper {
+    color: #ffffff;
+  }
+  
+  .macbook-pro .span {
+    color: #efc73a;
+  }
+  
+  .macbook-pro .frame {
+    align-items: center;
+    display: flex;
+    gap: 66px;
+    justify-content: center;
+    padding: 10px 0px;
+    position: absolute;
+    margin-left: 100px;
+
+  }
+  .textinput10 {
+    width:300px;
+    margin-left: 20px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+  .whitewashed {
+    color: #ffffff;
+
+  }
+  .macbook-pro .text-wrapper-2 {
+    flex-direction: row;
+    display: flex;
+    color: #efc73a;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  
+  .macbook-pro .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  .logout {
+    color: #ffffff;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 900px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .macbook-pro .search-rides {
+    color: transparent;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute; /* Position it absolutely within the container */
+    bottom: 0px; 
+    margin-left: 100px;
+
+  }
+  
+
+  
+  .macbook-pro .text-wrapper-4 {
+    color: #000000;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    
+    top: 35px;
+  }
+  
+  .macbook-pro .text-wrapper-5 {
+    color: #000000;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    
+    top: 35px;
+  }
+  
+  .macbook-pro .text-wrapper-6 {
+    color: #000000;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+
+    letter-spacing: 0;
+    line-height: normal;
+   
+    top: 35px;
+  }
+  
+  .macbook-pro .text-wrapper-7 {
+    color: #000000;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 35px;
+  }
+  
+  .macbook-pro .text-wrapper-8 {
+    color: #000000;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+  }
+  
+  .macbook-pro .frame-2 {
+    align-items: center;
+    display: flex;
+    gap: 79px;
+   
+    position: absolute;
+    width: 100%;
+  }
+
+  .details {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(255, 255, 255), rgba(0, 0, 0, 0.05));
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 90%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 10px 20px; /* Adjust padding as needed */
+    
+  }
+  .details2 {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(255, 255, 255), rgba(0, 0, 0, 0.05));
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 85%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 10px 70px; /* Adjust padding as needed */
+    
+  }
+  .whole {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  
+  
+  .first {
+    margin-left: 20px;
+  }
+
+  .bookButton {
+    margin-right: 50px;
+    height: 50px;
+    background-color: #efc73a;
+    border-color: #efc73a;
+    padding: 5px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px lightgray;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 20px;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    
+  }
+
+  .addRide {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    height: 60px;
+    background-color: #efc73a;
+    border-color: #efc73a;
+    padding: 20px 150px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px lightgray;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    
+    
+  }
+
+  .ride-form-popup {
+    width: 90%;
+    margin-right: 100px;
+  }
+
+  .close-button {
+    background: #ffffff;
+    border-color: #ffffff;
+    margin-left: 885px;
+    margin-top: -40px;
+    font-family: "Michroma-Regular";
+    font-size: 20px;
+  }
+  .ride-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .booking-popup {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    width: 500px;
+    padding: 40px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    border-radius: 10px;
+    border-width: 20px;
+    bottom: 0;
+    border-color: #efc73a;
+  }
+  .booking-popup2 {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    width: 650px;
+     
+    padding: 40px;
+    align-items: center;
+    height:300px;
+  
+    border-radius: 10px;
+    border-width: 20px;
+    border-color: #efc73a;
+  }
+  
+  
+
+  .booking-details {
+    align-items: center;
+    padding-left: 20px;
+    justify-content: center;
+    border-color: #efc73a;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    background-color: #ffffff;
+    border-width: 20px;
+  }
+  .booking-details2 {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    border-color: #efc73a;
+    font-family: "Michroma-Regular", Helvetica;
+    font-size: 24px;
+    background-color: #ffffff;
+    border-width: 20px;
+    padding-bottom: 20px;
+  }
+
+  .closebutton {
+    margin-left: 450px;
+    color: #ffffff;
+    margin-bottom: -700px;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 50px;
+  }
+  .cmon {
+    background-color: black;
+    padding: 10px 10px;
+    margin-left: 30px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    height:50px;
+    color: #ffffff;
+    width: 100px;
+  }
+  .cmon2 {
+    background-color: black;
+    padding: 10px 10px;
+    margin-left: 30px;
+    font-family: "Michroma-Regular";
+    height:50px;
+    margin-bottom: -20px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;
+  }
+
+  .mainscreen {
+    padding-bottom: 47px;
+    background-color: #ffffff;
+  }
+
+  .buttons {
+    height: 100px;
+  }
+
+  .login-form {
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 20px;
+    background-color:rgb(0,0,0,0.5);
+    border-radius: 20px;
+    color: #000000;
+  }
+
+  .macbook-pro .overlap-group2 {
+    background-image: url(./car.jpg);
+    position: absolute;
+    
+    background-size: cover;
+    height: 825px;
+    padding-top: 50px;
+    top: 0;
+    width: 100%;
+  }
+  .metamaskButton {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 20px;
+    background-color: #efc73a;
+    height: 50px;
+    margin-left: 100px;
+    padding:10px;
+    border-radius: 10px;
+
+  }
+  .headingText {
+    margin-left: 0px;
+    font-family: "Michroma-Regular";
+    color: #ffffff;
+    font-size: 100px;
+  }
+
+  .Text2 {
+    margin-left: 0px;
+    font-family: "Michroma-Regular";
+    font-size: 100px;
+  }
+  .Text2 {
+    margin-left: 0px;
+    font-family: "Michroma-Regular";
+    font-size: 50px;
+  }
+
+  .firstLine {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .rideHistory {
+    margin-left: 50px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+  }

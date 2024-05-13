@@ -1,0 +1,162 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    border-color: #efc73a;
+    border-width: 10px;
+    border-radius: 12px;
+    width: 90%;
+    padding-bottom: 70px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    padding: 40px 20px; /* Adjust padding as needed */
+}
+
+.textfix {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    margin-left: 10px;
+    font-size: 26px;
+}
+.textfix2 {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    margin-left: 100px;
+    font-size: 26px;
+}
+.textfix3 {
+    font-family: "Michroma-Regular";
+    color: #000000;
+    margin-left: 100px;
+    margin-right: 10px;
+    font-size: 26px;
+}
+
+
+.addRideButton {
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px lightgray;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    font-size: 20px;
+    margin-right: 50px;
+    height: 60px;
+    background-color: #efc73a;
+    border-color: #efc73a;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+}
+
+.textinput {
+    width:30%;
+    margin-left: 120px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+.textinput2 {
+    width:30%;
+    margin-left: 35px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+.textinput3 {
+    width:30%;
+    margin-left: 35px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+.textinput4 {
+    width:30%;
+    margin-left: 70px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+.textinput5 {
+    width:30%;
+    margin-left: 75px;
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    padding: 10;
+    
+}
+
+.buttonenv {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textinput7 {
+    width:60%;
+    height: 30px;
+    margin-left: 20px;
+    font-family: "Michroma-Regular";
+    color: #000000;
+    border-color: gray;
+    border-width: 0.5px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 0;
+    width: "100%";
+    
+}
