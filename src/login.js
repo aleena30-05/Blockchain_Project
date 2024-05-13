@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Web3 from 'web3';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [walletAddress, setWalletAddress] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +21,38 @@ const Login = () => {
   const handleLogin = () => {
     // Perform validation if needed
   };
+
+  const connectWalletHandler = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+      try {
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        console.log("Accounts:", accounts);
+  
+        const lowerCaseWalletAddress = walletAddress.toLowerCase();
+        const matchedAccount = accounts.find(account => account.toLowerCase() === lowerCaseWalletAddress);
+  
+        if (!matchedAccount) {
+          alert("The wallet address entered does not match any MetaMask account. Please switch your account in MetaMask.");
+        } else {
+          console.log("Connected to wallet:", matchedAccount);
+          // Store the matched account to be used in other webpages
+          localStorage.setItem('activeAccount', matchedAccount);
+          navigate('/Home');
+        }
+      } catch (e) {
+        console.log("Error:", e);
+      }
+    } else {
+      alert("Please install MetaMask to use this dApp!");
+    }
+  };
+  
+  // Usage in other parts of your code
+  const activeAccount = localStorage.getItem('activeAccount');
+  console.log("Active Account:", activeAccount);
+  
+  
+  
 
   return (
     <div className='mainscreen'>
@@ -58,7 +92,14 @@ const Login = () => {
             required
           />
         </div> */}
-        <button className = "metamaskButton" onClick={() => navigate('/Home')}>Connect to Metamask</button>
+        <input
+        type="text"
+        className="textinput"
+        value={walletAddress}
+        onChange={(e) => setWalletAddress(e.target.value)}
+        placeholder="Enter your wallet address"
+      />
+        <button className = "metamaskButton" onClick={ connectWalletHandler }>Connect to Metamask</button>
       </form>
     </div>
       </div>

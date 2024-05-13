@@ -26,6 +26,7 @@ const Main = () => {
   const [AddEthPopup, setAddEthPopup] = useState(false);
   const [RemoveEthPopup, setRemoveEthPopup] = useState(false);
   const [amount, setamount] = useState('');
+  const [walletaddress, setwalletaddress] = useState('');
 
   const handleAddRide = () => {
     setShowRideForm(true);
@@ -161,6 +162,18 @@ const Main = () => {
             <p>Destination: {dummyData[0].destination}</p>
             <p>Start Time: {dummyData[0].startTime}</p>
             <p>Remaining Funds: {dummyData[0].fare}</p> */}
+
+          <label className = "textfix12">
+            <br/>Wallet address:
+            <input className='textinput16'
+              type="text"
+              value={walletaddress}
+              onChange={(e) => setwalletaddress(e.target.value)}
+              required
+            />
+        
+      </label>
+            
             
           </div>
         </div>
@@ -171,6 +184,8 @@ const Main = () => {
           
           <h1 className='Text3'>Wallet Amount Remaining</h1>
           <p className='Text2'>$100</p>
+          <h1 className='Text3'>Wallet Address</h1>
+          <p className='Text2'>DMBA55ERY567</p>
           <button className= "cmon2" onClick={closeWalletShow}>Done</button>
             
           </div>

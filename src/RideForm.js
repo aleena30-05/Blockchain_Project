@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import vmContract from './blockchain/pooling.js';
 import "./formstyles.css"
 
 
@@ -11,14 +12,32 @@ function RideForm({ onAddRide }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Call the callback function passed from the parent component to add the ride
-    onAddRide({ name, startLocation, destination, startTime, walletAddress });
+
     // Reset the form fields
     setName('');
     setStartLocation('');
     setDestination('');
     setStartTime('');
     setWalletAddress('');
+  };
+
+  //MAKE CALL TO DATABASE FOR ADDRIDE
+  const addRide = async () => {
+    let currentWalletAddress = localStorage.getItem('activeAccount');
+    try{
+      console.log("Current Wallet Address:", currentWalletAddress);
+      console.log("Wallet Address:", walletAddress);
+      if (currentWalletAddress !== walletAddress.toLowerCase()) {alert("The wallet address entered does not match any MetaMask account."); return;}
+      const gasEstimate = await vmContract.methods.addRide(name, startLocation, destination, startTime).estimateGas({ from: walletAddress });
+
+      
+
+      return vmContract.methods.addRide(name, startLocation, destination, startTime)
+              .send({ from: walletAddress, gas: gasEstimate });
+    } catch (error) {
+      console.error("Failed to add ride:", error);
+      alert('Failed to add ride. Please fill in details correctly.');
+    }
   };
 
   return (
@@ -75,7 +94,7 @@ function RideForm({ onAddRide }) {
         />
       </label>
       <div className='buttonenv'>
-      <button className = "addRideButton" type="submit">Add Ride</button>
+      <button className = "addRideButton" type="submit" onClick={ addRide }>Add Ride</button>
       </div>
     </form>
   );
